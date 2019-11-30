@@ -3,83 +3,390 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		914B20DE2392935D002C69F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 914B20DD2392935D002C69F5 /* main.cpp */; };
+		9128BAD32392C6D1002FABE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9128BAD02392C6D1002FABE1 /* main.cpp */; };
+		9128BADC2392C789002FABE1 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		9128BADD2392C789002FABE1 /* libvulkan.1.1.121.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		9128BADF2392C789002FABE1 /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		9128BAE02392C789002FABE1 /* libvulkan.1.1.121.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		9128BAEA2392C7A0002FABE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9128BAE92392C7A0002FABE1 /* main.cpp */; };
+		9128BAF82392C9ED002FABE1 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		9128BAF92392C9ED002FABE1 /* libvulkan.1.1.121.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		9128BAFB2392C9ED002FABE1 /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		9128BAFC2392C9ED002FABE1 /* libvulkan.1.1.121.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		9128BB012392C9F2002FABE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9128BAF02392C979002FABE1 /* main.cpp */; };
+		91356BFA2392BF5A00142F28 /* libvulkan.1.1.121.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		91356BFC2392BF8300142F28 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		91356BFD2392BF8800142F28 /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		91356BFE2392BF8800142F28 /* libvulkan.1.1.121.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		91356C042392C03000142F28 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		91356C052392C03000142F28 /* libvulkan.1.1.121.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		91356C072392C03000142F28 /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		91356C082392C03000142F28 /* libvulkan.1.1.121.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		91356C132392C0E000142F28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91356C112392C0E000142F28 /* main.cpp */; };
+		91356C192392C54100142F28 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		91356C1A2392C54100142F28 /* libvulkan.1.1.121.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		91356C1C2392C54100142F28 /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */; };
+		91356C1D2392C54100142F28 /* libvulkan.1.1.121.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */; };
+		91CB42E42392BA0100AC231C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91CB42E22392BA0100AC231C /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		914B20D82392935D002C69F5 /* CopyFiles */ = {
+		9128BADE2392C789002FABE1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				9128BADF2392C789002FABE1 /* libglfw.3.3.dylib in CopyFiles */,
+				9128BAE02392C789002FABE1 /* libvulkan.1.1.121.dylib in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9128BAFA2392C9ED002FABE1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9128BAFB2392C9ED002FABE1 /* libglfw.3.3.dylib in CopyFiles */,
+				9128BAFC2392C9ED002FABE1 /* libvulkan.1.1.121.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91356C062392C03000142F28 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91356C072392C03000142F28 /* libglfw.3.3.dylib in CopyFiles */,
+				91356C082392C03000142F28 /* libvulkan.1.1.121.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91356C1B2392C54100142F28 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91356C1C2392C54100142F28 /* libglfw.3.3.dylib in CopyFiles */,
+				91356C1D2392C54100142F28 /* libvulkan.1.1.121.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91CB42D92392B9EA00AC231C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91356BFD2392BF8800142F28 /* libglfw.3.3.dylib in CopyFiles */,
+				91356BFE2392BF8800142F28 /* libvulkan.1.1.121.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		914B20DA2392935D002C69F5 /* vulkan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vulkan; sourceTree = BUILT_PRODUCTS_DIR; };
-		914B20DD2392935D002C69F5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9128BACE2392C6D1002FABE1 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		9128BACF2392C6D1002FABE1 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		9128BAD02392C6D1002FABE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9128BAD12392C6D1002FABE1 /* optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optional.h; sourceTree = "<group>"; };
+		9128BAD22392C6D1002FABE1 /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		9128BAE42392C789002FABE1 /* Pendule V2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Pendule V2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9128BAE52392C79F002FABE1 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		9128BAE62392C79F002FABE1 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		9128BAE72392C79F002FABE1 /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		9128BAE82392C79F002FABE1 /* optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optional.h; sourceTree = "<group>"; };
+		9128BAE92392C7A0002FABE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9128BAED2392C978002FABE1 /* optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optional.h; sourceTree = "<group>"; };
+		9128BAEE2392C978002FABE1 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		9128BAEF2392C979002FABE1 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		9128BAF02392C979002FABE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9128BAF12392C979002FABE1 /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		9128BB002392C9ED002FABE1 /* Lumiere Sphere */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lumiere Sphere"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		91356C0C2392C03000142F28 /* Sphere et tissus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Sphere et tissus"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91356C0E2392C0E000142F28 /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		91356C0F2392C0E000142F28 /* optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optional.h; sourceTree = "<group>"; };
+		91356C102392C0E000142F28 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		91356C112392C0E000142F28 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		91356C122392C0E000142F28 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		91356C212392C54100142F28 /* Pendule V1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Pendule V1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CB42E02392B9EA00AC231C /* Double Rectangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Double Rectangle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CB42E12392BA0100AC231C /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_image.h; path = "Double Rectangle/stb_image.h"; sourceTree = SOURCE_ROOT; };
+		91CB42E22392BA0100AC231C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "Double Rectangle/main.cpp"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		91CB42E32392BA0100AC231C /* optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = optional.h; path = "Double Rectangle/optional.h"; sourceTree = SOURCE_ROOT; };
+		91CB42E62392BA0400AC231C /* frag.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = frag.spv; sourceTree = "<group>"; };
+		91CB42E72392BA0400AC231C /* compile.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = compile.sh; sourceTree = "<group>"; };
+		91CB42E82392BA0400AC231C /* shader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
+		91CB42E92392BA0400AC231C /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
+		91CB42EA2392BA0400AC231C /* vert.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = vert.spv; sourceTree = "<group>"; };
+		91CB42EC2392BA0400AC231C /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
+		91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.1.121.dylib; path = "../../../../../../vulkansdk-macos-1.1.121.1/macOS/lib/libvulkan.1.1.121.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		914B20D72392935D002C69F5 /* Frameworks */ = {
+		9128BADB2392C789002FABE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9128BADC2392C789002FABE1 /* libglfw.3.3.dylib in Frameworks */,
+				9128BADD2392C789002FABE1 /* libvulkan.1.1.121.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9128BAF72392C9ED002FABE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9128BAF82392C9ED002FABE1 /* libglfw.3.3.dylib in Frameworks */,
+				9128BAF92392C9ED002FABE1 /* libvulkan.1.1.121.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91356C032392C03000142F28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91356C042392C03000142F28 /* libglfw.3.3.dylib in Frameworks */,
+				91356C052392C03000142F28 /* libvulkan.1.1.121.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91356C182392C54100142F28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91356C192392C54100142F28 /* libglfw.3.3.dylib in Frameworks */,
+				91356C1A2392C54100142F28 /* libvulkan.1.1.121.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91CB42D52392B9EA00AC231C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91356BFC2392BF8300142F28 /* libglfw.3.3.dylib in Frameworks */,
+				91356BFA2392BF5A00142F28 /* libvulkan.1.1.121.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9128BACD2392C6BF002FABE1 /* Pendule */ = {
+			isa = PBXGroup;
+			children = (
+				9128BACF2392C6D1002FABE1 /* shaders */,
+				9128BAD22392C6D1002FABE1 /* textures */,
+				9128BAD02392C6D1002FABE1 /* main.cpp */,
+				9128BAD12392C6D1002FABE1 /* optional.h */,
+				9128BACE2392C6D1002FABE1 /* stb_image.h */,
+			);
+			path = Pendule;
+			sourceTree = "<group>";
+		};
+		9128BAD42392C761002FABE1 /* Pendule V2 */ = {
+			isa = PBXGroup;
+			children = (
+				9128BAE62392C79F002FABE1 /* shaders */,
+				9128BAE72392C79F002FABE1 /* textures */,
+				9128BAE92392C7A0002FABE1 /* main.cpp */,
+				9128BAE82392C79F002FABE1 /* optional.h */,
+				9128BAE52392C79F002FABE1 /* stb_image.h */,
+			);
+			path = "Pendule V2";
+			sourceTree = "<group>";
+		};
+		9128BAEB2392C966002FABE1 /* Lumière Sphere */ = {
+			isa = PBXGroup;
+			children = (
+				9128BAEE2392C978002FABE1 /* shaders */,
+				9128BAF12392C979002FABE1 /* textures */,
+				9128BAF02392C979002FABE1 /* main.cpp */,
+				9128BAED2392C978002FABE1 /* optional.h */,
+				9128BAEF2392C979002FABE1 /* stb_image.h */,
+			);
+			name = "Lumière Sphere";
+			path = "Lumière Sphere";
+			sourceTree = "<group>";
+		};
+		91356C0D2392C0B700142F28 /* Sphere et tissus */ = {
+			isa = PBXGroup;
+			children = (
+				91356C112392C0E000142F28 /* main.cpp */,
+				91356C0F2392C0E000142F28 /* optional.h */,
+				91356C102392C0E000142F28 /* shaders */,
+				91356C122392C0E000142F28 /* stb_image.h */,
+				91356C0E2392C0E000142F28 /* textures */,
+			);
+			path = "Sphere et tissus";
+			sourceTree = "<group>";
+		};
 		914B20D12392935D002C69F5 = {
 			isa = PBXGroup;
 			children = (
-				914B20DC2392935D002C69F5 /* vulkan */,
+				9128BAEB2392C966002FABE1 /* Lumière Sphere */,
+				9128BAD42392C761002FABE1 /* Pendule V2 */,
+				9128BACD2392C6BF002FABE1 /* Pendule */,
+				91356C0D2392C0B700142F28 /* Sphere et tissus */,
+				91CB42CC2392B9D600AC231C /* Double Rectangle */,
 				914B20DB2392935D002C69F5 /* Products */,
+				914B20E42392963E002C69F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		914B20DB2392935D002C69F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				914B20DA2392935D002C69F5 /* vulkan */,
+				91CB42E02392B9EA00AC231C /* Double Rectangle */,
+				91356C0C2392C03000142F28 /* Sphere et tissus */,
+				91356C212392C54100142F28 /* Pendule V1 */,
+				9128BAE42392C789002FABE1 /* Pendule V2 */,
+				9128BB002392C9ED002FABE1 /* Lumiere Sphere */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		914B20DC2392935D002C69F5 /* vulkan */ = {
+		914B20E42392963E002C69F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				914B20DD2392935D002C69F5 /* main.cpp */,
+				91356BFB2392BF8300142F28 /* libglfw.3.3.dylib */,
+				91CB43132392BEEA00AC231C /* libvulkan.1.1.121.dylib */,
 			);
-			path = vulkan;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91CB42CC2392B9D600AC231C /* Double Rectangle */ = {
+			isa = PBXGroup;
+			children = (
+				91CB42E52392BA0400AC231C /* shaders */,
+				91CB42EB2392BA0400AC231C /* textures */,
+				91CB42E22392BA0100AC231C /* main.cpp */,
+				91CB42E32392BA0100AC231C /* optional.h */,
+				91CB42E12392BA0100AC231C /* stb_image.h */,
+			);
+			path = "Double Rectangle";
+			sourceTree = "<group>";
+		};
+		91CB42E52392BA0400AC231C /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				91CB42E62392BA0400AC231C /* frag.spv */,
+				91CB42E72392BA0400AC231C /* compile.sh */,
+				91CB42E82392BA0400AC231C /* shader.vert */,
+				91CB42E92392BA0400AC231C /* shader.frag */,
+				91CB42EA2392BA0400AC231C /* vert.spv */,
+			);
+			name = shaders;
+			path = "../../../../../../../../Dropbox/ECAM/MIN 4/GPU computing/Programmation parallèle, OpenGL/vulkan/Double Rectangle/shaders";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91CB42EB2392BA0400AC231C /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				91CB42EC2392BA0400AC231C /* texture.jpg */,
+			);
+			path = textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		914B20D92392935D002C69F5 /* vulkan */ = {
+		9128BAD72392C789002FABE1 /* Pendule V2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 914B20E12392935D002C69F5 /* Build configuration list for PBXNativeTarget "vulkan" */;
+			buildConfigurationList = 9128BAE12392C789002FABE1 /* Build configuration list for PBXNativeTarget "Pendule V2" */;
 			buildPhases = (
-				914B20D62392935D002C69F5 /* Sources */,
-				914B20D72392935D002C69F5 /* Frameworks */,
-				914B20D82392935D002C69F5 /* CopyFiles */,
+				9128BAD82392C789002FABE1 /* ShellScript */,
+				9128BAD92392C789002FABE1 /* Sources */,
+				9128BADB2392C789002FABE1 /* Frameworks */,
+				9128BADE2392C789002FABE1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = vulkan;
+			name = "Pendule V2";
 			productName = vulkan;
-			productReference = 914B20DA2392935D002C69F5 /* vulkan */;
+			productReference = 9128BAE42392C789002FABE1 /* Pendule V2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		9128BAF32392C9ED002FABE1 /* Lumiere Sphere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9128BAFD2392C9ED002FABE1 /* Build configuration list for PBXNativeTarget "Lumiere Sphere" */;
+			buildPhases = (
+				9128BAF42392C9ED002FABE1 /* ShellScript */,
+				9128BAF52392C9ED002FABE1 /* Sources */,
+				9128BAF72392C9ED002FABE1 /* Frameworks */,
+				9128BAFA2392C9ED002FABE1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lumiere Sphere";
+			productName = vulkan;
+			productReference = 9128BB002392C9ED002FABE1 /* Lumiere Sphere */;
+			productType = "com.apple.product-type.tool";
+		};
+		91356BFF2392C03000142F28 /* Sphere et tissus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91356C092392C03000142F28 /* Build configuration list for PBXNativeTarget "Sphere et tissus" */;
+			buildPhases = (
+				91356C002392C03000142F28 /* ShellScript */,
+				91356C012392C03000142F28 /* Sources */,
+				91356C032392C03000142F28 /* Frameworks */,
+				91356C062392C03000142F28 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sphere et tissus";
+			productName = vulkan;
+			productReference = 91356C0C2392C03000142F28 /* Sphere et tissus */;
+			productType = "com.apple.product-type.tool";
+		};
+		91356C142392C54100142F28 /* Pendule V1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91356C1E2392C54100142F28 /* Build configuration list for PBXNativeTarget "Pendule V1" */;
+			buildPhases = (
+				91356C152392C54100142F28 /* ShellScript */,
+				91356C162392C54100142F28 /* Sources */,
+				91356C182392C54100142F28 /* Frameworks */,
+				91356C1B2392C54100142F28 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pendule V1";
+			productName = vulkan;
+			productReference = 91356C212392C54100142F28 /* Pendule V1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		91CB42D22392B9EA00AC231C /* Double Rectangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91CB42DD2392B9EA00AC231C /* Build configuration list for PBXNativeTarget "Double Rectangle" */;
+			buildPhases = (
+				91CB42D32392B9EA00AC231C /* ShellScript */,
+				91CB42D42392B9EA00AC231C /* Sources */,
+				91CB42D52392B9EA00AC231C /* Frameworks */,
+				91CB42D92392B9EA00AC231C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Double Rectangle";
+			productName = vulkan;
+			productReference = 91CB42E02392B9EA00AC231C /* Double Rectangle */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -88,16 +395,12 @@
 		914B20D22392935D002C69F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = victorsmits;
-				TargetAttributes = {
-					914B20D92392935D002C69F5 = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
-				};
 			};
 			buildConfigurationList = 914B20D52392935D002C69F5 /* Build configuration list for PBXProject "vulkan" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -109,23 +412,299 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				914B20D92392935D002C69F5 /* vulkan */,
+				91CB42D22392B9EA00AC231C /* Double Rectangle */,
+				91356BFF2392C03000142F28 /* Sphere et tissus */,
+				91356C142392C54100142F28 /* Pendule V1 */,
+				9128BAD72392C789002FABE1 /* Pendule V2 */,
+				9128BAF32392C9ED002FABE1 /* Lumiere Sphere */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9128BAD82392C789002FABE1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		9128BAF42392C9ED002FABE1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		91356C002392C03000142F28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		91356C152392C54100142F28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		91CB42D32392B9EA00AC231C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		914B20D62392935D002C69F5 /* Sources */ = {
+		9128BAD92392C789002FABE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914B20DE2392935D002C69F5 /* main.cpp in Sources */,
+				9128BAEA2392C7A0002FABE1 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9128BAF52392C9ED002FABE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9128BB012392C9F2002FABE1 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91356C012392C03000142F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91356C132392C0E000142F28 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91356C162392C54100142F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9128BAD32392C6D1002FABE1 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91CB42D42392B9EA00AC231C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CB42E42392BA0100AC231C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		9128BAE22392C789002FABE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9128BAE32392C789002FABE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9128BAFE2392C9ED002FABE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9128BAFF2392C9ED002FABE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		91356C0A2392C03000142F28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		91356C0B2392C03000142F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		91356C1F2392C54100142F28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		91356C202392C54100142F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		914B20DF2392935D002C69F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -235,18 +814,40 @@
 			};
 			name = Release;
 		};
-		914B20E22392935D002C69F5 /* Debug */ = {
+		91CB42DE2392B9EA00AC231C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		914B20E32392935D002C69F5 /* Release */ = {
+		91CB42DF2392B9EA00AC231C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/include/",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+					"/Users/victorsmits/vulkansdk-macos-1.1.121.1/macOS/lib/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -254,6 +855,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9128BAE12392C789002FABE1 /* Build configuration list for PBXNativeTarget "Pendule V2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9128BAE22392C789002FABE1 /* Debug */,
+				9128BAE32392C789002FABE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9128BAFD2392C9ED002FABE1 /* Build configuration list for PBXNativeTarget "Lumiere Sphere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9128BAFE2392C9ED002FABE1 /* Debug */,
+				9128BAFF2392C9ED002FABE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91356C092392C03000142F28 /* Build configuration list for PBXNativeTarget "Sphere et tissus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91356C0A2392C03000142F28 /* Debug */,
+				91356C0B2392C03000142F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91356C1E2392C54100142F28 /* Build configuration list for PBXNativeTarget "Pendule V1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91356C1F2392C54100142F28 /* Debug */,
+				91356C202392C54100142F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		914B20D52392935D002C69F5 /* Build configuration list for PBXProject "vulkan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -263,11 +900,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		914B20E12392935D002C69F5 /* Build configuration list for PBXNativeTarget "vulkan" */ = {
+		91CB42DD2392B9EA00AC231C /* Build configuration list for PBXNativeTarget "Double Rectangle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				914B20E22392935D002C69F5 /* Debug */,
-				914B20E32392935D002C69F5 /* Release */,
+				91CB42DE2392B9EA00AC231C /* Debug */,
+				91CB42DF2392B9EA00AC231C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
