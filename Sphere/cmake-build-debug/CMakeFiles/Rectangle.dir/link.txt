@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -O3 -std=c++17   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Rectangle.dir/main.cpp.o  -o Rectangle -Wl,-rpath,/usr/local/lib /usr/local/lib/libvulkan.dylib /usr/local/lib/libglfw.3.3.dylib 

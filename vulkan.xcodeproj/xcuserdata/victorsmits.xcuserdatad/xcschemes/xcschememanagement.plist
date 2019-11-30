@@ -4,10 +4,68 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>vulkan.xcscheme_^#shared#^_</key>
+		<key>Double Rectangle.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Lumiere Sphere.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pendule V1.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pendule V2.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Sphere et tissus.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9128BAD72392C789002FABE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9128BAF32392C9ED002FABE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91356BFF2392C03000142F28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91356C142392C54100142F28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>914B20D92392935D002C69F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91CB42D22392B9EA00AC231C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91CB42FD2392BA8100AC231C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
